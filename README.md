@@ -1,70 +1,10 @@
-# Getting Started with Create React App
+### General
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- My reasoning behind learning React _again_ is to **maintain working knowledge in a popular frontend JavaScript framework**. In my opinion, maintaining an ancillary competence in a frontend framework is important because no matter what field you specialize in, there could always be the necessity to build a interface for you/other users to interact with a backend system to do a myriad of different things.
+- Currently, I am working as a Cloud Engineer, learning technologies like Docker, containerization, Pub/Sub, etc., under the Google Cloud Platform umbrella, and this is my main area of focus. However, _one day_ I may decide to build my own app to manage multiple backend services/infrastructure components/apps in the Cloud, and for that I'm going to need to leverage a framework like React to build an interface I can use or provide to others. Moreover, there could be an ask from work to build an interface, in which case, I have a feeling that React will be preferred over Vue or Angular.
+  - I was actually learning Vue for a couple of months, and I really enjoyed it. But as I approach 32, I'm realizing it's **not always about what you like and dislike, it's imperative you make correct long-term, pragmatic and financially-sensible decisions**. React is much more popular that both Vue and Angular, developing using this framework will be relatively easier becausee of the enormous community surrounding it. Furthermore, if things were to progress on some front, and I begin collaborating with another engineer/team, having the user interface built with something ubiquitous like React would make things easier.
 
-## Available Scripts
+### App ideas:
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- List container images in Artifact/Container Registry and allow users to manage and monitor Cloud Run instances
+- Basic guide to select GCP services and potential use cases for them

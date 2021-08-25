@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import ChildComponent from "./components/ChildComponent";
 
-function App() {
+const divStyle = {
+  color: "blue",
+  border: "1px solid red",
+};
+
+const aPropStringSample = "I'm a prop coming in from the parent component";
+const aPropObjectSample = {
+  aString: "I like cars",
+  anArray: ["Corolla", "Camry", "4Runner"],
+  aBoolean: false,
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={divStyle}>
+      <p>helloWorld</p>
+      <code>hello</code>
+      <ChildComponent
+        aPropString={aPropStringSample}
+        aPropObject={aPropObjectSample}
+      ></ChildComponent>
+      <ChildComponent
+        aPropString={aPropStringSample}
+        aPropObject={aPropObjectSample}
+      ></ChildComponent>
     </div>
   );
-}
+};
 
 export default App;
+
+// refs:
+// React inline style: https://reactjs.org/docs/dom-elements.html#style
