@@ -7,7 +7,7 @@ const divStyle = {
 const ChildComponent = (props) => {
   // ^ above can be destructured to be `ChildComponent({aPropStringSample, aPropObjectSample})` too because `props` is an object with k-v pairs for each prop coming in
   const { aPropString, aPropObject } = props;
-  const { aString: aStringFromAPropObject, anArray, aBoolean } = aPropObject;
+  const { aString: aStringFromAPropObject, anArray } = aPropObject;
   // ^ further destructuring (and renaming) the destructured props k-v pair `aPropObject`
 
   const today = Date(Date.now());

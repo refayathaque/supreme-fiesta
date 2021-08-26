@@ -1,4 +1,5 @@
 import ChildComponent from "./components/ChildComponent";
+import EventsAndState from "./components/EventsAndState";
 
 const divStyle = {
   color: "blue",
@@ -9,7 +10,6 @@ const aPropStringSample = "I'm a prop coming in from the parent component";
 const aPropObjectSample = {
   aString: "I like cars",
   anArray: ["Corolla", "Camry", "4Runner"],
-  aBoolean: false,
 };
 
 const App = () => {
@@ -21,10 +21,7 @@ const App = () => {
         aPropString={aPropStringSample}
         aPropObject={aPropObjectSample}
       ></ChildComponent>
-      <ChildComponent
-        aPropString={aPropStringSample}
-        aPropObject={aPropObjectSample}
-      ></ChildComponent>
+      <EventsAndState></EventsAndState>
     </div>
   );
 };
