@@ -56,7 +56,7 @@ const DynamicStyling = (props) => {
       </p>
       {/* in this case we need to have the syntax in which we keep the original
         css class name with the dash (-) because we are operating inside
-        template literals I can be large or small text */}
+        template literals*/}
     </div>
   );
 };

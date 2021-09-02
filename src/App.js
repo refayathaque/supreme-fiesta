@@ -4,6 +4,7 @@ import EventsAndState from "./components/EventsAndState";
 import ListsAndConditionalContent from "./components/ListsAndConditionalContent";
 import PassingPropsUpToParent from "./components/PassingPropsUpToParent";
 import DynamicStyling from "./components/DynamicStyling";
+import Portals from "./components/Portals";
 
 const divStyle = {
   color: "blue",
@@ -39,6 +40,7 @@ const App = () => {
       <EventsAndState></EventsAndState>
       <ListsAndConditionalContent></ListsAndConditionalContent>
       <DynamicStyling></DynamicStyling>
+      <Portals></Portals>
     </div>
   );
 };
