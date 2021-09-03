@@ -15,8 +15,17 @@ const Backdrop = (props) => {
 const ModalOverlay = (props) => {
   return (
     <div className="modal">
-      <p>I'm a modal</p>
-      <button onClick={props.onConfirm}></button>
+      <div className="card">
+        <header className="header">
+          <p>I'm a modal</p>
+        </header>
+        <main className="content">
+          <p>Hello!</p>
+        </main>
+        <footer className="actions">
+          <button onClick={props.onConfirm}>Okay</button>
+        </footer>
+      </div>
     </div>
   );
 };
@@ -27,10 +36,14 @@ const Portals = (props) => {
   return (
     <div style={divStyle}>
       Portals
+      <button>Open up a modal</button>
       {ReactDOM.createPortal(
-        <Backdrop onConfirm={onConfirm}>
-          <ModalOverlay onConfirm={onConfirm}></ModalOverlay>
-        </Backdrop>
+        <Backdrop onConfirm={onConfirm}></Backdrop>,
+        document.getElementById("backdrop-root")
+      )}
+      {ReactDOM.createPortal(
+        <ModalOverlay onConfirm={props.onConfirm}></ModalOverlay>,
+        document.getElementById("overlay-root")
       )}
     </div>
   );
