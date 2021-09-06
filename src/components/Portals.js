@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { useState, Fragment } from "react";
 import ReactDOM from "react-dom";
 import "./Portals.css";
 
@@ -23,28 +23,41 @@ const ModalOverlay = (props) => {
           <p>Hello!</p>
         </main>
         <footer className="actions">
-          <button onClick={props.onConfirm}>Okay</button>
+          <button onClick={props.onConfirm}>Close me!</button>
         </footer>
       </div>
     </div>
   );
 };
 
-const onConfirm = () => {};
-
-const Portals = (props) => {
+const Combined = (props) => {
   return (
-    <div style={divStyle}>
-      Portals
-      <button>Open up a modal</button>
+    <Fragment>
       {ReactDOM.createPortal(
-        <Backdrop onConfirm={onConfirm}></Backdrop>,
+        <Backdrop onConfirm={props.onConfirm}></Backdrop>,
         document.getElementById("backdrop-root")
       )}
       {ReactDOM.createPortal(
         <ModalOverlay onConfirm={props.onConfirm}></ModalOverlay>,
         document.getElementById("overlay-root")
       )}
+    </Fragment>
+  );
+};
+
+const Portals = () => {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    // code here will close the modal
+    setModal(!modal);
+  };
+
+  return (
+    <div style={divStyle}>
+      Portals
+      <button onClick={toggleModal}>Open up a modal</button>
+      {modal && <Combined onConfirm={toggleModal}></Combined>}
     </div>
   );
 };
@@ -52,4 +65,5 @@ const Portals = (props) => {
 export default Portals;
 
 // refs:
-// A modal is an overlay
+// Check the index.html file in public folder to see where backdrop-root and overlay-root html ids are
+// You can use `ReactDOM.createPortal` to move a component's html content some where else in index.html, i.e., the actual DOM that's being rendered

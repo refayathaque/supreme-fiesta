@@ -37,10 +37,10 @@ const App = () => {
         aPropString={aPropStringSample}
         aPropObject={aPropObjectSample}
       ></ChildComponent>
+      <Portals></Portals>
       <EventsAndState></EventsAndState>
       <ListsAndConditionalContent></ListsAndConditionalContent>
       <DynamicStyling></DynamicStyling>
-      <Portals></Portals>
     </div>
   );
 };
