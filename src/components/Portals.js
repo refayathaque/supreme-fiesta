@@ -58,6 +58,7 @@ const Portals = () => {
       Portals
       <button onClick={toggleModal}>Open up a modal</button>
       {modal && <Combined onConfirm={toggleModal}></Combined>}
+      {/* ^ conditionally rendering the modal */}
     </div>
   );
 };
