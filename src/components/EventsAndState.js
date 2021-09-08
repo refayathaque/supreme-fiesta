@@ -15,7 +15,7 @@ const EventsAndState = () => {
     enteredAge: "",
     enteredDoB: "",
   });
-  // ^ alternate way (instead of multiple states) of maintaining state when you want to have grouped data
+  // ^ alternate way (instead of multiple states) of maintaining state when you want to have grouped data - can also `useReducer`, check the Reducer.js component
 
   const clickHandler = () => {
     setTitle("goodbyeWorld");

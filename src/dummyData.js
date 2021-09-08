@@ -1,4 +1,4 @@
-export default [
+const dummyData = [
   {
     userId: 1,
     id: 1,
@@ -61,3 +61,5 @@ export default [
     body: "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
   },
 ];
+
+export default dummyData;

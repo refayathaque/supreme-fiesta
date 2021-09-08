@@ -7,6 +7,7 @@ import DynamicStyling from "./components/DynamicStyling";
 import Portals from "./components/Portals";
 import Effect from "./components/Effect";
 import Reducer from "./components/Reducer";
+import ReducerAndEffect from "./components/ReducerAndEffect";
 
 const divStyle = {
   color: "blue",
@@ -42,6 +43,7 @@ const App = () => {
       <Portals></Portals>
       <Effect></Effect>
       <Reducer></Reducer>
+      <ReducerAndEffect></ReducerAndEffect>
       <EventsAndState></EventsAndState>
       <ListsAndConditionalContent></ListsAndConditionalContent>
       <DynamicStyling></DynamicStyling>

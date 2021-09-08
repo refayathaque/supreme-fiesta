@@ -35,12 +35,14 @@ const Effect = () => {
 
   return (
     <div style={divStyle}>
-      Effects
+      Effect
       <form>
+        <label>Email</label>
         <input type="text" value={email} onChange={emailHandler}></input>
+        <label>Password</label>
         <input type="text" value={password} onChange={passwordHandler}></input>
       </form>
-      {!valid && <p>Email/password is invalid</p>}
+      {!valid && <p>Email/password (must be more than 6 chars) is invalid</p>}
       {valid && <p>Email/password is valid</p>}
       {/* conditional rendering */}
     </div>
