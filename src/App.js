@@ -8,6 +8,9 @@ import Portals from "./components/Portals";
 import Effect from "./components/Effect";
 import Reducer from "./components/Reducer";
 import ReducerAndEffect from "./components/ReducerAndEffect";
+import ContextA from "./components/ContextA";
+import ContextB from "./components/ContextB";
+import { SampleContextProvider } from "./store/sample-context";
 
 const divStyle = {
   color: "blue",
@@ -44,6 +47,10 @@ const App = () => {
       <Effect></Effect>
       <Reducer></Reducer>
       <ReducerAndEffect></ReducerAndEffect>
+      <SampleContextProvider>
+        <ContextA></ContextA>
+        <ContextB></ContextB>
+      </SampleContextProvider>
       <EventsAndState></EventsAndState>
       <ListsAndConditionalContent></ListsAndConditionalContent>
       <DynamicStyling></DynamicStyling>
