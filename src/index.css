@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+/* had to add this for the "cart" button to show up in food-order-app/components/Layout/Header.js, found in Q&A of lesson 132 */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

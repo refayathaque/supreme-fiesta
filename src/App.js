@@ -12,6 +12,8 @@ import ContextA from "./components/ContextA";
 import ContextB from "./components/ContextB";
 import { SampleContextProvider } from "./store/sample-context";
 
+import FoodOrderAppContainer from "./food-order-app/App";
+
 const divStyle = {
   color: "blue",
   border: "1px solid red",
@@ -54,6 +56,7 @@ const App = () => {
       <EventsAndState></EventsAndState>
       <ListsAndConditionalContent></ListsAndConditionalContent>
       <DynamicStyling></DynamicStyling>
+      <FoodOrderAppContainer></FoodOrderAppContainer>
     </div>
   );
 };

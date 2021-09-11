@@ -13,3 +13,12 @@
 ### Packages to use:
 
 - [Mirage JS • An API mocking library for frontend developers](https://miragejs.com)
+
+### Styling:
+
+- Why use [CSS modules](https://dev.to/myogeshchavan97/an-introduction-to-css-modules-in-react-2fkd)?
+  - In the React application, we usually create a single .css file and import it to the main file so the CSS will be applied to all the components. But using CSS modules helps to create separate CSS files for each component and is local to that particular file and avoids class name collision.
+
+### Folder structure/naming conventions
+
+- In addition to "UI" and "Layout" folders within "components", there are "feature" folders that resemble the different logical components of your app, for the food order app there are folders for "Cart" and "Meals"

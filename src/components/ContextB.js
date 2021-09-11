@@ -1,6 +1,12 @@
 import { useContext } from "react";
 import SampleContext from "../store/sample-context";
 
+const divStyle = {
+  color: "gray",
+  border: "1px solid maroon",
+  margin: 10,
+};
+
 const ContextB = () => {
   const ctx = useContext(SampleContext);
 
@@ -9,7 +15,7 @@ const ContextB = () => {
   };
 
   return (
-    <div>
+    <div style={divStyle}>
       Context B<p>{ctx.nameOfPerson}</p>
       <button onClick={changeNameOfPersonHandler}>
         Change name of person in ContextB component to see update in ContextA
