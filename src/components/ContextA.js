@@ -5,8 +5,7 @@ const ContextA = () => {
   const ctx = useContext(SampleContext);
   return (
     <div>
-      Context A
-      <p>{ctx.nameOfPerson}</p>
+      Context A<p>{ctx.nameOfPerson}</p>
     </div>
   );
 };

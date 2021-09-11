@@ -9,3 +9,7 @@
 - List container images in Artifact/Container Registry and allow users to manage and monitor Cloud Run instances
 - Basic guide to select GCP services and potential use cases for them
 - Use GCP Billing APIs to monitor costs of services, and/or use GCP Monitoring to track visitors accessing a public app running on a container
+
+### Packages to use:
+
+- [Mirage JS • An API mocking library for frontend developers](https://miragejs.com)
