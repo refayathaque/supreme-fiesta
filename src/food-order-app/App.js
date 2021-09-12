@@ -1,4 +1,5 @@
-import Header from "./components/Layout/Header";
+import Header from "./components/Layout/Header.js";
+import Meals from "./components/Meals/Meals.js";
 
 const divStyle = {
   color: "green",
@@ -14,6 +15,9 @@ const App = () => {
         section 11 practice project
       </h3>
       <Header></Header>
+      <main>
+        <Meals></Meals>
+      </main>
     </div>
   );
 };

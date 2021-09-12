@@ -1,5 +1,5 @@
 import { useState } from "react";
-import dummyData from "../dummyData.js";
+import dummyData from "../dummy-data.js";
 
 const divStyle = {
   color: "black",
