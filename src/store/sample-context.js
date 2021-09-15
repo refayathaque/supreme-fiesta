@@ -10,7 +10,7 @@ export const SampleContextProvider = (props) => {
   const [nameOfPerson, setNameOfPerson] = useState("Refayat");
 
   const changeNameOfPersonHandler = (newName) => {
-    // this method is passed to all components that are consumers of the SampleContext.Provider below, allows them to send data up to the SampleContext, and in this case, change the  `nameOfPerson` property - Once the `nameOfPerson` is changed, all components "consuming" this context will be updated
+    // this method is passed to all components that are consumers of the SampleContext.Provider below, it allows consumers to send data up to the SampleContext, and in this case, change the `nameOfPerson` property - Once the `nameOfPerson` is changed, all components "consuming" this context will be updated
     console.log(newName);
     setNameOfPerson(newName);
   };
