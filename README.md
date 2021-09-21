@@ -18,6 +18,7 @@
 
 - Why use [CSS modules](https://dev.to/myogeshchavan97/an-introduction-to-css-modules-in-react-2fkd)?
   - In the React application, we usually create a single .css file and import it to the main file so the CSS will be applied to all the components. But using CSS modules helps to create separate CSS files for each component and is local to that particular file and avoids class name collision.
+- Good/potentially very useful (but a little convulted) example of conditional CSS styling with useState and useEffect hooks in HeaderCartButtonNew.js
 
 ### Folder structure/naming conventions
 
