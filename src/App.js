@@ -11,8 +11,8 @@ import ReducerAndEffect from "./components/ReducerAndEffect";
 import ContextA from "./components/ContextA";
 import ContextB from "./components/ContextB";
 import { SampleContextProvider } from "./store/sample-context";
-
 import FoodOrderAppContainer from "./food-order-app/App";
+import HTTPRequest from "./components/HTTPRequests/HTTPRequests";
 
 const divStyle = {
   color: "blue",
@@ -38,6 +38,7 @@ const App = () => {
       <p>helloWorld</p>
       <code>hello</code>
       <p>User thought from child component below: {aPropComingUpFromChild}</p>
+      <HTTPRequest></HTTPRequest>
       <PassingPropsUpToParent
         onSaveSomething={getSomePropFromChild}
       ></PassingPropsUpToParent>
