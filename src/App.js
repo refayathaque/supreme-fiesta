@@ -12,7 +12,8 @@ import ContextA from "./components/ContextA";
 import ContextB from "./components/ContextB";
 import { SampleContextProvider } from "./store/sample-context";
 import FoodOrderAppContainer from "./food-order-app/App";
-import HTTPRequest from "./components/HTTPRequests/HTTPRequests";
+import HTTPRequests from "./components/HTTPRequests/HTTPRequests";
+import CustomHooksHTTP from "./components/CustomHooksHTTP/CustomHooksHTTP";
 
 const divStyle = {
   color: "blue",
@@ -38,7 +39,8 @@ const App = () => {
       <p>helloWorld</p>
       <code>hello</code>
       <p>User thought from child component below: {aPropComingUpFromChild}</p>
-      <HTTPRequest></HTTPRequest>
+      <HTTPRequests></HTTPRequests>
+      <CustomHooksHTTP></CustomHooksHTTP>
       <PassingPropsUpToParent
         onSaveSomething={getSomePropFromChild}
       ></PassingPropsUpToParent>
