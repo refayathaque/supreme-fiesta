@@ -45,6 +45,12 @@ const CustomHooksHTTP = () => {
 
   return (
     <div style={divStyle}>
+      <p>
+        A single custom hook being used to send both GET and POST requests,
+        custom hook is being called from two different components corresponding
+        to
+      </p>
+      GET/POST
       <NewTask onAddTask={taskAddHandler} />
       <Tasks
         items={tasks}
